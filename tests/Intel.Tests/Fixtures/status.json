@@ -1,0 +1,65 @@
+{
+  "database": "/private/var/folders/p5/yx0gllhs2xgdvj00mf7szb180000gn/T/pytest-of-mike/pytest-176/test_sample_responses_for_clie0/intel.db",
+  "entity_counts": {
+    "project": 1,
+    "repository": 1,
+    "task": 1
+  },
+  "last_observed_at": null,
+  "llm": "disabled",
+  "needs_attention": 1,
+  "open_observations": 1,
+  "open_tasks": 1,
+  "pending_proposals": 3,
+  "queue": {},
+  "sources": [
+    {
+      "discovered": false,
+      "discovered_from": null,
+      "enabled": true,
+      "id": 1,
+      "kind": "git",
+      "last_error": null,
+      "last_run": "succeeded",
+      "last_success_at": "2026-10-25T13:56:19+00:00",
+      "location": "/private/var/folders/p5/yx0gllhs2xgdvj00mf7szb180000gn/T/pytest-of-mike/pytest-176/test_sample_responses_for_clie0/repos/3dcrawler",
+      "name": "3dcrawler",
+      "poll_interval_seconds": 300,
+      "records": 3,
+      "settings": {}
+    },
+    {
+      "discovered": false,
+      "discovered_from": null,
+      "enabled": false,
+      "id": 2,
+      "kind": "gitlab",
+      "last_error": null,
+      "last_run": "succeeded",
+      "last_success_at": "2026-10-25T13:56:19+00:00",
+      "location": "https://git.example.com",
+      "name": "gitlab",
+      "poll_interval_seconds": 300,
+      "records": 2,
+      "settings": {
+        "projects": "Axiom/3dcrawler"
+      }
+    },
+    {
+      "discovered": false,
+      "discovered_from": null,
+      "enabled": true,
+      "id": 3,
+      "kind": "filesystem",
+      "last_error": null,
+      "last_run": "succeeded",
+      "last_success_at": "2026-10-25T13:56:19+00:00",
+      "location": "/private/var/folders/p5/yx0gllhs2xgdvj00mf7szb180000gn/T/pytest-of-mike/pytest-176/test_sample_responses_for_clie0/SyncedDocuments/CRAWLER",
+      "name": "crawler-notes",
+      "poll_interval_seconds": 300,
+      "records": 2,
+      "settings": {}
+    }
+  ],
+  "version": "0.1.0"
+}

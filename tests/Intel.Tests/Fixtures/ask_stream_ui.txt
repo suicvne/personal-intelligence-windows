@@ -1,0 +1,60 @@
+event: lookup
+data: {"text": "search_records(since=2026-10-24, until=2026-10-24): 0 records", "description": "records changed on 2026-10-24", "result": "0 records"}
+
+event: delta
+data: {"text": "Cra"}
+
+event: delta
+data: {"text": "wler'"}
+
+event: delta
+data: {"text": "s ope"}
+
+event: delta
+data: {"text": "n wor"}
+
+event: delta
+data: {"text": "k is "}
+
+event: delta
+data: {"text": "the U"}
+
+event: delta
+data: {"text": "I lay"}
+
+event: delta
+data: {"text": "out ("}
+
+event: delta
+data: {"text": "\"ui."}
+
+event: delta
+data: {"text": "md\")"}
+
+event: delta
+data: {"text": ".\nNo"}
+
+event: delta
+data: {"text": "thing"}
+
+event: delta
+data: {"text": " else"}
+
+event: delta
+data: {"text": " is r"}
+
+event: delta
+data: {"text": "ecord"}
+
+event: delta
+data: {"text": "ed [R"}
+
+event: delta
+data: {"text": "1]."}
+
+event: answer_text
+data: {"text": "Crawler's open work is the UI layout (\"ui.md\").\nNothing else is recorded [R1].", "spoken_text": "Crawler's open work is the UI layout (\"ui.md\").\nNothing else is recorded."}
+
+event: answer
+data: {"question": "what is going on with crawler?", "mode": "llm", "text": "Crawler's open work is the UI layout (\"ui.md\").\nNothing else is recorded [R1].", "spoken_text": "Crawler's open work is the UI layout (\"ui.md\").\nNothing else is recorded.", "evidence": [], "inferences": [], "gaps": ["No issue data."], "references": [{"ref": "R1", "kind": "record", "label": "document \"UI work\" in crawler-notes (2026-08-26)", "record_id": 6, "entity_id": null, "uri": "/private/var/folders/p5/yx0gllhs2xgdvj00mf7szb180000gn/T/pytest-of-mike/pytest-176/test_sample_responses_for_clie0/SyncedDocuments/CRAWLER/ui.md"}, {"ref": "WEB1", "kind": "record", "label": "Synthetic browser test reference (example.com)", "uri": "https://example.com/"}], "ambiguous": {}, "invalid_refs": [], "note": null, "lookups": [{"text": "search_records(since=2026-10-24, until=2026-10-24): 0 records", "description": "records changed on 2026-10-24", "result": "0 records"}]}
+

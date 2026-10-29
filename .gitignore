@@ -1,0 +1,6 @@
+**/bin/
+**/obj/
+artifacts/
+.whisky/
+.DS_Store
+TestResults/

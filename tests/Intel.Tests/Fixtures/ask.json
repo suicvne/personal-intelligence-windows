@@ -1,0 +1,71 @@
+{
+  "ambiguous": {},
+  "evidence": [],
+  "gaps": [],
+  "inferences": [],
+  "invalid_refs": [],
+  "lookups": [],
+  "mode": "retrieval_only",
+  "note": "LLM not used; showing retrieved evidence only.",
+  "question": "what is going on with crawler?",
+  "references": [
+    {
+      "entity_id": 2,
+      "kind": "entity",
+      "label": "project Crawler",
+      "record_id": null,
+      "ref": "E1",
+      "uri": null
+    },
+    {
+      "entity_id": null,
+      "kind": "activity",
+      "label": "recorded activity of EVERY known project, component and stand-alone repository, computed over all records (authoritative for dates)",
+      "record_id": null,
+      "ref": "A1",
+      "uri": null
+    },
+    {
+      "entity_id": null,
+      "kind": "tasks",
+      "label": "open tasks (GitLab issues and tasks written in notes)",
+      "record_id": null,
+      "ref": "T1",
+      "uri": null
+    },
+    {
+      "entity_id": null,
+      "kind": "observation",
+      "label": "open observation (inactivity)",
+      "record_id": null,
+      "ref": "O1",
+      "uri": null
+    },
+    {
+      "entity_id": null,
+      "kind": "record",
+      "label": "commit \"init\" in 3dcrawler (2026-09-01)",
+      "record_id": 2,
+      "ref": "R1",
+      "uri": null
+    },
+    {
+      "entity_id": null,
+      "kind": "record",
+      "label": "document \"UI work\" in crawler-notes (2026-08-26)",
+      "record_id": 6,
+      "ref": "R2",
+      "uri": "/private/var/folders/p5/yx0gllhs2xgdvj00mf7szb180000gn/T/pytest-of-mike/pytest-176/test_sample_responses_for_clie0/SyncedDocuments/CRAWLER/ui.md"
+    },
+    {
+      "entity_id": null,
+      "kind": "record",
+      "label": "document \"World Essay\" in crawler-notes (2026-08-26)",
+      "record_id": 7,
+      "ref": "R3",
+      "uri": "/private/var/folders/p5/yx0gllhs2xgdvj00mf7szb180000gn/T/pytest-of-mike/pytest-176/test_sample_responses_for_clie0/SyncedDocuments/CRAWLER/essay.md"
+    }
+  ],
+  "spoken_text": "Retrieved 6 items about Crawler. No synthesis was performed; review the references below.",
+  "text": "Retrieved 6 items about Crawler. No synthesis was performed; review the references below."
+}

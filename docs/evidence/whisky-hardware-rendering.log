@@ -1,0 +1,35 @@
+wineserver: using server-side synchronization.
+ERR: Context11.cpp:1004 (rx::Context11::triggerDrawCallProgramRecompilation): Error compiling dynamic vertex executable: C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with default flags. (vs_5_0)
+ Retrying with skip validation
+C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with skip validation flags. (vs_5_0)
+ Retrying with skip optimization
+C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with skip optimization flags. (vs_5_0)
+
+ERR: Context11.cpp:1004 (rx::Context11::triggerDrawCallProgramRecompilation): Error compiling dynamic vertex executable: C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with default flags. (vs_5_0)
+ Retrying with skip validation
+C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with skip validation flags. (vs_5_0)
+ Retrying with skip optimization
+C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with skip optimization flags. (vs_5_0)
+
+ERR: Context11.cpp:1004 (rx::Context11::triggerDrawCallProgramRecompilation): Error compiling dynamic vertex executable: C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with default flags. (vs_5_0)
+ Retrying with skip validation
+C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+
+Warning: D3D shader compilation failed with skip validation flags. (vs_5_0)
+ Retrying with skip optimization
+C:\fakepath:5:1: E5000: syntax error, unexpected NEW_IDENTIFIER
+

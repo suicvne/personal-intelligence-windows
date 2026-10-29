@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:core="using:Intel.Core" xmlns:conv="using:Avalonia.Data.Converters" x:Class="Intel.Desktop.MainWindow" x:DataType="core:MainViewModel"
+        Title="Intel · Windows feasibility prototype" Width="1040" Height="760" MinWidth="700" MinHeight="500">
+  <Grid RowDefinitions="*,Auto">
+    <TabControl TabStripPlacement="Left" Name="Navigation" Margin="12">
+      <TabItem Header="Connection">
+        <ScrollViewer><StackPanel Margin="24,12" Spacing="14" MaxWidth="650" HorizontalAlignment="Stretch">
+          <TextBlock Text="Connect to Intel" FontSize="28" FontWeight="SemiBold" />
+          <TextBlock Name="ModeLabel" TextWrapping="Wrap" />
+          <TextBlock Text="Server URL" />
+          <TextBox Name="ServerBox" Watermark="http://127.0.0.1:8765" />
+          <TextBlock Text="API token" />
+          <TextBox Name="TokenBox" PasswordChar="●" Watermark="Paste the daemon API token" />
+          <WrapPanel Orientation="Horizontal">
+            <Button Name="ConnectButton" Content="Test connection" Click="Connect" Margin="0,0,8,8" />
+            <Button Name="SaveButton" Content="Save securely" Click="Save" Margin="0,0,8,8" />
+            <Button Name="SessionButton" Content="Use for this session" Click="Session" Margin="0,0,8,8" />
+          </WrapPanel>
+          <TextBlock Name="ConnectionNote" TextWrapping="Wrap" />
+          <TextBlock Text="Paths returned by the daemon belong to its host. This prototype copies those paths and opens web references in your browser." TextWrapping="Wrap" Opacity="0.7" />
+        </StackPanel></ScrollViewer>
+      </TabItem>
+      <TabItem Header="Ask">
+        <Grid RowDefinitions="*,Auto" Margin="24,12">
+          <ScrollViewer Grid.Row="0"><StackPanel Spacing="14">
+            <TextBlock Text="Ask your projects" FontSize="28" FontWeight="SemiBold" />
+            <ItemsControl ItemsSource="{Binding Lookups}"><ItemsControl.ItemTemplate><DataTemplate><TextBlock Text="{Binding}" TextWrapping="Wrap" Opacity="0.7" /></DataTemplate></ItemsControl.ItemTemplate></ItemsControl>
+            <SelectableTextBlock Name="AnswerText" Text="{Binding Text}" TextWrapping="Wrap" FontSize="18" />
+            <SelectableTextBlock Text="{Binding Details}" TextWrapping="Wrap" />
+            <ItemsControl ItemsSource="{Binding Citations}">
+              <ItemsControl.ItemTemplate><DataTemplate x:DataType="core:Citation">
+                <StackPanel Spacing="4" Margin="0,8">
+                  <TextBlock Text="{Binding Label}" TextWrapping="Wrap" FontWeight="SemiBold" />
+                  <SelectableTextBlock Text="{Binding Uri}" TextWrapping="Wrap" Opacity="0.7" />
+                  <Button Content="{Binding ActionLabel}" Click="Reference" IsVisible="{Binding Uri, Converter={x:Static conv:StringConverters.IsNotNullOrEmpty}}" />
+                </StackPanel>
+              </DataTemplate></ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <StackPanel Orientation="Horizontal" Spacing="8"><Button Content="Read answer aloud" Click="ReadAnswer" /><Button Content="Stop audio" Click="StopAudio" /></StackPanel>
+            <TextBlock Text="{Binding AudioStatus}" TextWrapping="Wrap" />
+          </StackPanel></ScrollViewer>
+          <StackPanel Grid.Row="1" Spacing="10" Margin="0,20,0,0">
+            <TextBox Name="QuestionBox" Text="{Binding Question, Mode=TwoWay}" Watermark="Ask about your projects" KeyDown="QuestionKey" />
+            <WrapPanel>
+              <CheckBox Content="Use the model" IsChecked="{Binding UseModel}" Margin="0,0,16,0" />
+              <CheckBox Content="Read aloud" IsChecked="{Binding ReadAloud}" Margin="0,0,16,0" />
+              <Button Name="AskButton" Content="Ask" Click="Ask" IsEnabled="{Binding CanAsk}" Margin="0,0,8,0" />
+              <Button Name="StopButton" Content="Stop (Esc)" Click="Stop" IsEnabled="{Binding Busy}" />
+            </WrapPanel>
+          </StackPanel>
+        </Grid>
+      </TabItem>
+    </TabControl>
+    <Border Grid.Row="1" Padding="18,10" Background="{DynamicResource SystemControlBackgroundChromeMediumLowBrush}"><TextBlock Name="StatusText" Text="{Binding Status}" TextWrapping="Wrap" /></Border>
+  </Grid>
+</Window>

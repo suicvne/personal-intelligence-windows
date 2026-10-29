@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><ItemGroup><EmbeddedResource Include="../../tests/Intel.Tests/Fixtures/*" Link="Fixtures/%(Filename)%(Extension)" /></ItemGroup></Project>

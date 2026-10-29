@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><AssemblyName>Intel</AssemblyName><AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.22" />
+    <ProjectReference Include="../Intel.Core/Intel.Core.csproj" />
+    <ProjectReference Include="../Intel.Platform/Intel.Platform.csproj" />
+  </ItemGroup>
+</Project>
